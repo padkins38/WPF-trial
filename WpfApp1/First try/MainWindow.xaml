@@ -14,9 +14,9 @@
             <ColumnDefinition Width="1116*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="txtButtonboi" Content="Boop" HorizontalAlignment="Left" VerticalAlignment="Top" Height="69" Width="71" Margin="435,111,0,0" Background="#00DDDDDD" Click="Button_Click"/>
+        <Button x:Name="txtButtonboi" Content="Boop" HorizontalAlignment="Left" VerticalAlignment="Top" Height="69" Width="71" Margin="435,111,0,0" Background="#00DDDDDD" Click="Button_Click" IsDefault="True"/>
         <Label Content="Happy Boi&#xD;&#xA;" HorizontalAlignment="Center" Margin="0,562,0,0" VerticalAlignment="Top" Height="73" Width="120"/>
-        <TextBox x:Name="txtWhatTheDogDoin" HorizontalAlignment="Left" Margin="685,235,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="White" SelectionBrush="#000078D7" FontSize="9" Foreground="White">
+        <TextBox x:Name="txtWhatTheDogDoin" HorizontalAlignment="Left" Margin="685,235,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="White" SelectionBrush="#FF16507E" Foreground="#FF2434AE" SelectionTextBrush="#FF9C2424" FontSize="20">
             <TextBox.OpacityMask>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black"/>
