@@ -53,13 +53,13 @@ namespace First_try
             DateTime birthdate = Convert.ToDateTime(dob);
             TimeSpan age = DateTime.Now - birthdate;
 
-
+            string name = txtName.Text;
 
             //MessageBox.Show((age.TotalDays / 365).ToString());
 
             double old = age.TotalDays / 365;
 
-            lblOutput.Content = $"Hello _____, you are {old.ToString("N0")}";
+            lblOutput.Content = $"Hello {name}, you are {old.ToString("N0")}";
             lblOutput.Visibility = Visibility.Visible;
 
         }
