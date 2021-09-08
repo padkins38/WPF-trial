@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31613.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "First try", "First try\First try.csproj", "{FF0E3CB1-86C1-4132-A898-FF033885D136}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "First try", "First try\First try.csproj", "{FF0E3CB1-86C1-4132-A898-FF033885D136}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF - Vowels and Consonants", "WPF - Vowels and Consonants\WPF - Vowels and Consonants.csproj", "{0F262986-B1D8-4180-99D2-4E3960CC8408}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{FF0E3CB1-86C1-4132-A898-FF033885D136}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF0E3CB1-86C1-4132-A898-FF033885D136}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF0E3CB1-86C1-4132-A898-FF033885D136}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F262986-B1D8-4180-99D2-4E3960CC8408}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F262986-B1D8-4180-99D2-4E3960CC8408}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F262986-B1D8-4180-99D2-4E3960CC8408}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F262986-B1D8-4180-99D2-4E3960CC8408}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

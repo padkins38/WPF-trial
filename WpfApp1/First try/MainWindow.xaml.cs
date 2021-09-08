@@ -30,10 +30,6 @@ namespace First_try
 
             TextBox txt1 = new TextBox();
             txt1.Text = "Hello WOrld";
-
-
-
-
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
@@ -59,7 +55,7 @@ namespace First_try
 
             double old = age.TotalDays / 365;
 
-            lblOutput.Content = $"Hello {name}, you are {old.ToString("N0")}";
+            lblOutput.Content = $"Hello {name}, you are {old.ToString("N2")}";
             lblOutput.Visibility = Visibility.Visible;
 
         }
