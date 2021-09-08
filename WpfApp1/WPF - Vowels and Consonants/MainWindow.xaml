@@ -10,6 +10,11 @@
         <ImageBrush ImageSource="https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg" Stretch="Fill"/>
     </Window.Background>
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="52*"/>
+            <RowDefinition Height="113*"/>
+            <RowDefinition Height="182*"/>
+        </Grid.RowDefinitions>
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                 <GradientStop Color="Black"/>
@@ -20,14 +25,13 @@
             <ColumnDefinition Width="1116*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="txtButtonboi" Content="Enter" HorizontalAlignment="Left" VerticalAlignment="Top" Height="28" Width="102" Margin="925,136,0,0" Background="#00DDDDDD" Click="Button_Click"/>
-        
-        <Label x:Name="lblVowels" Content="Label" HorizontalAlignment="Left" Margin="113,0,0,0" VerticalAlignment="Center" Height="316" Width="220" FontSize="24" FontFamily="Algerian" Foreground="#FF25A4CE"/>
-        <TextBox x:Name="txtName" HorizontalAlignment="Left" Margin="781,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="28"/>
-        <Label Content="Enter Words" HorizontalAlignment="Left" Margin="658,132,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <Label x:Name="lblConsonants" Content="Label" HorizontalAlignment="Left" Margin="338,0,0,0" VerticalAlignment="Center" Height="316" Width="220" FontSize="24" FontFamily="Algerian" Foreground="#FF25A4CE"/>
-        <Label Content="Vowels" HorizontalAlignment="Left" Margin="176,136,0,0" VerticalAlignment="Top" Height="53" Width="94" FontSize="24"/>
-        <Label Content="Consonants" HorizontalAlignment="Left" Margin="338,137,0,0" VerticalAlignment="Top" Height="53" Width="220" FontSize="24"/>
+        <Button x:Name="txtButtonboi" Content="Enter" HorizontalAlignment="Left" VerticalAlignment="Top" Height="28" Width="102" Margin="925,32,0,0" Background="#00DDDDDD" Click="Button_Click" Grid.Row="1"/>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Margin="781,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="28" Grid.Row="1"/>
+        <Label Content="Enter Words" HorizontalAlignment="Left" Margin="658,28,0,0" VerticalAlignment="Top" FontSize="20" Grid.Row="1"/>
+        <Label Content="Vowels" HorizontalAlignment="Left" Margin="176,32,0,0" VerticalAlignment="Top" Height="53" Width="94" FontSize="24" Grid.Row="1"/>
+        <Label Content="Consonants" HorizontalAlignment="Left" Margin="360,34,0,0" VerticalAlignment="Top" Height="53" Width="220" FontSize="24" Grid.Row="1"/>
+        <ListBox x:Name="ListVowels" Margin="133,85,802,115" Grid.RowSpan="2" Grid.Row="1" IsSynchronizedWithCurrentItem="False"/>
+        <ListBox x:Name="ListConsonants" Margin="338,86,597,114" Grid.RowSpan="2" Grid.Row="1"/>
 
     </Grid>
 </Window>

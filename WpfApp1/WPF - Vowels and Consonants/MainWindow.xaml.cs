@@ -23,26 +23,29 @@ namespace First_try
         public MainWindow()
         {
             InitializeComponent();
-            lblVowels.Visibility = Visibility.Hidden;
-            lblConsonants.Visibility = Visibility.Hidden;
+            ListVowels.Visibility = Visibility.Hidden;
+            ListConsonants.Visibility = Visibility.Hidden;
         }        
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            ListVowels.Items.Clear();
+            ListConsonants.Items.Clear();
+
             string Vowels;
             string Consonants;
-            new List<char> Vowels = 
             foreach (var letter in txtName.Text.ToLower())
             {
                 if (letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u')
                 {
 
                     Vowels = txtName.Text;
-                    lblVowels.Items.Add(letter);
+                    ListVowels.Items.Add(letter);
                 }
                 else
                 {
                     
                     Consonants = txtName.Text;
+                    ListConsonants.Items.Add(letter);
                 }
             }
 
@@ -51,11 +54,11 @@ namespace First_try
 
 
 
-            lblVowels.Content = $"{Vowels}";
-            lblConsonants.Content = $"{Consonants}";
+            /*ListVowels.Content = $"{Vowels}";
+            ListConsonants.Content = $"{Consonants}";*/
 
-            lblVowels.Visibility = Visibility.Visible;
-            lblConsonants.Visibility = Visibility.Visible;
+            ListVowels.Visibility = Visibility.Visible;
+            ListConsonants.Visibility = Visibility.Visible;
         }
 
     }
