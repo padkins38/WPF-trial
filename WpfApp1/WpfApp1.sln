@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "First try", "First try\Firs
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF - Vowels and Consonants", "WPF - Vowels and Consonants\WPF - Vowels and Consonants.csproj", "{0F262986-B1D8-4180-99D2-4E3960CC8408}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Classes Practices", "Classes Practices\Classes Practices.csproj", "{077E57FD-2C19-427F-941E-3C54C6AD390F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{0F262986-B1D8-4180-99D2-4E3960CC8408}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F262986-B1D8-4180-99D2-4E3960CC8408}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F262986-B1D8-4180-99D2-4E3960CC8408}.Release|Any CPU.Build.0 = Release|Any CPU
+		{077E57FD-2C19-427F-941E-3C54C6AD390F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{077E57FD-2C19-427F-941E-3C54C6AD390F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{077E57FD-2C19-427F-941E-3C54C6AD390F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{077E57FD-2C19-427F-941E-3C54C6AD390F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -48,15 +48,8 @@ namespace First_try
                     ListConsonants.Items.Add(letter);
                 }
             }
-
-
-
-
-
-
             /*ListVowels.Content = $"{Vowels}";
             ListConsonants.Content = $"{Consonants}";*/
-
             ListVowels.Visibility = Visibility.Visible;
             ListConsonants.Visibility = Visibility.Visible;
         }

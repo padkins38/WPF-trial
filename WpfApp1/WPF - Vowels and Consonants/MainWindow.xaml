@@ -10,22 +10,7 @@
         <ImageBrush ImageSource="https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg" Stretch="Fill"/>
     </Window.Background>
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="52*"/>
-            <RowDefinition Height="113*"/>
-            <RowDefinition Height="182*"/>
-        </Grid.RowDefinitions>
-        <Grid.Background>
-            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                <GradientStop Color="Black"/>
-                <GradientStop Color="#FF91FAE3" Offset="1"/>
-            </LinearGradientBrush>
-        </Grid.Background>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="1116*"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-        <Button x:Name="txtButtonboi" Content="Enter" HorizontalAlignment="Left" VerticalAlignment="Top" Height="28" Width="102" Margin="925,32,0,0" Background="#00DDDDDD" Click="Button_Click" Grid.Row="1"/>
+        <Button x:Name="txtButtonboi" Content="Enter" HorizontalAlignment="Left" VerticalAlignment="Top" Height="28" Width="102" Margin="925,32,0,0" Background="#00DDDDDD" Click="Button_Click" Grid.Row="1" IsDefault="True"/>
         <TextBox x:Name="txtName" HorizontalAlignment="Left" Margin="781,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="28" Grid.Row="1"/>
         <Label Content="Enter Words" HorizontalAlignment="Left" Margin="658,28,0,0" VerticalAlignment="Top" FontSize="20" Grid.Row="1"/>
         <Label Content="Vowels" HorizontalAlignment="Left" Margin="176,32,0,0" VerticalAlignment="Top" Height="53" Width="94" FontSize="24" Grid.Row="1"/>
