@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF - Vowels and Consonants
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Classes Practices", "Classes Practices\Classes Practices.csproj", "{077E57FD-2C19-427F-941E-3C54C6AD390F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "(P) WPF - Classes", "(P) WPF - Classes\(P) WPF - Classes.csproj", "{9C37C5D9-8BD7-4F50-80DF-196B88F67A64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Random test DONT open", "Random test DONT open\Random test DONT open.csproj", "{D0D7A6BC-A1C5-44F2-9FAD-88B523B1CF60}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{077E57FD-2C19-427F-941E-3C54C6AD390F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{077E57FD-2C19-427F-941E-3C54C6AD390F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{077E57FD-2C19-427F-941E-3C54C6AD390F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C37C5D9-8BD7-4F50-80DF-196B88F67A64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C37C5D9-8BD7-4F50-80DF-196B88F67A64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C37C5D9-8BD7-4F50-80DF-196B88F67A64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C37C5D9-8BD7-4F50-80DF-196B88F67A64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0D7A6BC-A1C5-44F2-9FAD-88B523B1CF60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0D7A6BC-A1C5-44F2-9FAD-88B523B1CF60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0D7A6BC-A1C5-44F2-9FAD-88B523B1CF60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0D7A6BC-A1C5-44F2-9FAD-88B523B1CF60}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

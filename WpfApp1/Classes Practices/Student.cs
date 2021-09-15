@@ -34,13 +34,6 @@ namespace Classes_Practices
             /*Majors = new List<string>();
             Course = new UniversityCourse();*/
         }
-        /// <summary>
-        /// overloaded constuctor
-        /// </summary>
-        /// <param name="id"></param>
-        /// <param name="fName"></param>
-        /// <param name="lName"></param>
-        /// <param name="BursarBalance"></param>
 
         public Student(int id, string fName, string lName, double BursarBalance)
         {
@@ -67,6 +60,11 @@ namespace Classes_Practices
         public double CheckBalance()
         {
             return BursarBalance;
+        }
+
+        public override string ToString()
+        {
+            return $"{LastName}, {FirstName}, ({SoonerID.ToString("N0")}";
         }
 
         /*public class UniversityCourse
