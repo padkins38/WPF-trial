@@ -35,6 +35,7 @@
         <TextBox x:Name="txt_Toy_Name" TextWrapping="Wrap" Margin="165,280,0,0" HorizontalAlignment="Left" Width="95" Height="35" VerticalAlignment="Top"/>
         <TextBox x:Name="txt_URL" TextWrapping="Wrap" Margin="165,350,0,0" Height="35" VerticalAlignment="Top" HorizontalAlignment="Left" Width="95"/>
         <Button x:Name="bttn_Activate" Content="Button" Margin="305,284,400,0" Height="56" VerticalAlignment="Top" Click="bttn_Activate_Click"/>
+        <ListBox x:Name="ListBox_1" Margin="475,216,135,26" SelectionChanged="ListBox_SelectionChanged"/>
 
     </Grid>
 </Window>

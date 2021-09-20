@@ -27,22 +27,67 @@ namespace _P__WPF___Classes
 
         private void bttn_Activate_Click(object sender, RoutedEventArgs e)
         {
-            List<Toy> toys = new List<Toy>();
-
-            //instance 1 for toy
-            Toy t1 = new Toy();
-
-            t1.Manufacturer = "Beulah's Candyland";
-            t1.Name = "Milk Chocolate Peanut Clusters 2 pounds";
-            t1.Price = 23.00;
-            t1.GetAisle();
-
-            toys.Add(t1);
-
-            foreach (var toy in toys)
+            bool isValid = true;
+            if (string.IsNullOrWhiteSpace(txt_URL.Text) == true)
             {
-               ;
+                isValid = false;
+                txt_Manufacturer_Name.Text = string.Empty;
+                MessageBox.Show("Invalid entry for the URL");
             }
+            if (string.IsNullOrWhiteSpace(txt_Manufacturer_Name.Text) == true)
+            {
+                isValid = false;
+                txt_Manufacturer_Name.Text = string.Empty;
+                MessageBox.Show("Invalid entry for manufacturer");
+            }
+            if (string.IsNullOrWhiteSpace(txt_Toy_Name.Text) == true)
+            {
+                isValid = false;
+                txt_Manufacturer_Name.Text = string.Empty;
+                MessageBox.Show("Invalid entry for the toy name");
+            }
+            if(string.IsNullOrWhiteSpace(txt_Toy_Price.Text) == true)
+            {
+                isValid = false;
+                txt_Manufacturer_Name.Text = string.Empty;
+                MessageBox.Show("Invalid entry for toy price");
+            }
+
+            ////////////////
+            if (isValid == false)
+            {
+                return;
+            }
+
+/*
+
+            List<Toy> ToyBox = new List<Toy>();
+            Toy t1 = new Toy();
+            double price;
+
+            //t1.Manufacturer = txt_Manufacturer_Name.ToString();
+            t1.Name = txt_Toy_Name.ToString();
+            t1.Image = txt_URL.ToString();
+            while (double.TryParse(txt_Toy_Price.Text, out price) == false)
+            {
+                MessageBox.Show($"Please enter a double");
+                Environment.Exit(-1);
+            }
+            t1.Price = price;
+
+            ToyBox.Add(t1);
+            ListBox_1.Items.Add(t1);
+           */
+        }
+
+        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Toy selectedToy = (Toy)ListBox_1.SelectedItem;
+            MessageBox.Show(selectedToy.GetAisle());
+
+            var uri = new Uri(selectedToy.Image);
+            var img = new BitmapImage(uri);
         }
     }
 }
+

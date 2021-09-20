@@ -20,18 +20,23 @@ namespace _P__WPF___Classes
             Image = "";
             Aisle = "";
         }
-        public Toy(string manufacturer, string name, double price, string image)
-        {
-            Manufacturer = manufacturer;
-            Name = name;
-            Price = price;
-            Image = image;
-        }
         public string GetAisle()
         {
             string priceNoDot = Price.ToString().Replace('.',' ');
             string aisle = Manufacturer[0].ToString().ToUpper() + priceNoDot;
             return aisle;
+        }
+        /*public Toy(string manufacturer, string name, double price, string image)
+        {
+            Manufacturer = manufacturer;
+            Name = name;
+            Price = price;
+            Image = image;
+        }*/
+
+        public override string ToString()
+        {                      
+            return $"{Manufacturer} + {Name}";            
         }
     }
 }
