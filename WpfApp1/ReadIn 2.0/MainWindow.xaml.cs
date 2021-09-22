@@ -47,6 +47,16 @@ namespace ReadIn_2._0
                 //pieces[4] = "Carolina"
 
 
+                /*With a calss
+                DateTime tDate = Convert.ToDateTime(pieces[0]);
+                string product = pieces[1];
+                string price = pieces[2];
+                SalesData s = new SalesData();
+                s.Transaction_Date = tDate;
+                s.Product = product;
+                s.Price = price;*/
+
+
 
 
                 string paymentType = pieces[3]; //the mastercard
