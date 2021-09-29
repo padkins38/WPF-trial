@@ -20,7 +20,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReadIn 2.0", "ReadIn 2.0\ReadIn 2.0.csproj", "{A24ABD1F-B5DD-4F2B-917D-EF63C5119676}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "(P) WPF - Contact List", "(P) WPF - Contact List\(P) WPF - Contact List.csproj", "{30005E87-375F-4890-A4AF-7B071E2F3929}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "(P) WPF - Contact List", "(P) WPF - Contact List\(P) WPF - Contact List.csproj", "{30005E87-375F-4890-A4AF-7B071E2F3929}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuuuuuGet Json", "NuuuuuGet Json\NuuuuuGet Json.csproj", "{FB703D15-690B-4EFA-93D9-9D6989788C7A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -56,9 +58,16 @@ Global
 		{30005E87-375F-4890-A4AF-7B071E2F3929}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30005E87-375F-4890-A4AF-7B071E2F3929}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30005E87-375F-4890-A4AF-7B071E2F3929}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB703D15-690B-4EFA-93D9-9D6989788C7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB703D15-690B-4EFA-93D9-9D6989788C7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB703D15-690B-4EFA-93D9-9D6989788C7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB703D15-690B-4EFA-93D9-9D6989788C7A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FB703D15-690B-4EFA-93D9-9D6989788C7A} = {B36C22D3-8B9F-4586-98FB-CF14EB15C5D3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4FBA9AD3-D766-4B32-A14C-222D3F4561CD}

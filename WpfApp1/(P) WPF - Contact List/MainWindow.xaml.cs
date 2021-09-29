@@ -61,6 +61,7 @@ namespace _P__WPF___Contact_List
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Contacts s = (Contacts)LstBoxContacts.SelectedItem;
+
             txtFirstName.Text = s.FirstName;
             txtLastName.Text = s.LastName;
             txtEmail.Text = s.Email;
