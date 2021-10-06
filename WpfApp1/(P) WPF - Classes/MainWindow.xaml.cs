@@ -46,12 +46,12 @@ namespace _P__WPF___Classes
                 txt_Manufacturer_Name.Text = string.Empty;
                 MessageBox.Show("Invalid entry for the toy name");
             }
-            /*if(string.IsNullOrWhiteSpace(txt_Toy_Price.Text) == true)
+            if (string.IsNullOrWhiteSpace(txt_Toy_Price.Text) == true)
             {
                 isValid = false;
                 txt_Manufacturer_Name.Text = string.Empty;
                 MessageBox.Show("Invalid entry for toy price");
-            }*/
+            }
             double price;
             if (double.TryParse(txt_Toy_Price.Text, out price) == false)
             {

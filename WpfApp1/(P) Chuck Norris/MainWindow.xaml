@@ -1,0 +1,22 @@
+﻿<Window x:Class="_P__Chuck_Norris.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_P__Chuck_Norris"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="https://media.gq.com/photos/5583008609f0bee56440d085/1:1/w_450,h_450,c_limit/news-politics-blogs-death-race-chucknorris1450.jpg"/>
+        </Grid.Background>
+        <ComboBox x:Name="cboCategory" HorizontalAlignment="Left" Margin="45,107,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnCategory" Content="Use this Button" HorizontalAlignment="Left" Margin="575,73,0,0" VerticalAlignment="Top" Height="80" Width="145" Foreground="#FFE90000" FontWeight="Bold" FontSize="18" Click="btnCategory_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7xIl_0Ph6Q0rmIlDZiM44GlyjV-75sIGG2w&amp;usqp=CAU"/>
+            </Button.Background>
+        </Button>
+        <TextBox x:Name="txtFunnyJoke" HorizontalAlignment="Center" Margin="0,249,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="476" Height="140" Foreground="#FF252526" Opacity="0.305" SelectionBrush="#FF0078D7" SelectionTextBrush="#FF0078D7"/>
+
+    </Grid>
+</Window>

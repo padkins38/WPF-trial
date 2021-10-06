@@ -14,7 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace _P__WPF___Contact_List
+namespace Contacts_attempt_2
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -25,36 +25,30 @@ namespace _P__WPF___Contact_List
         {
             InitializeComponent();
 
-            string file = "Contacts.txt";
-            string[] lines = File.ReadAllLines(file);
-           
 
+            string[] lines = File.ReadAllLines("contacts.txt");
+
+            //Id|FirstName|LastName|Email|Photo
+            //1 | Kerwinn | Moriarty | kmoriarty0@state.gov | https://kelicommheadshots.com/wp-content/uploads/2019/02/Jen-for-Social-Media-2-256x256.jpg
 
             for (int i = 1; i < lines.Length; i++)
             {
-                /*Id | FirstName | LastName | Email                | Photo
-                1    | Kerwinn   | Moriarty | kmoriarty0@state.gov | https://kelicommheadshots.com/wp-content/uploads/2019/02/Jen-for-Social-Media-2-256x256.jpg*/
-
                 string line = lines[i];
                 string[] pieces = line.Split("|");
 
-                // pieces[0] = *Id
-                // pieces[1] = FirstName
-                // pieces[2] = LastName
-                // pieces[3] = Email
-                // pieces[4] = Photo
+                Contacts c = new Contacts();
 
-                Contacts s = new Contacts();
                 int id = Convert.ToInt32(pieces[0]);
-                s.ID = id;
-                s.FirstName = pieces[1];
-                s.LastName = pieces[2];
-                s.Email = pieces[3];
-                s.URL = pieces[4];
+                c.Id = id;
+                c.FirstName = pieces[1];
+                c.LastName  = pieces[2];
+                c.Email     = pieces[3];
+                c.Photo = pieces[4];
 
-                LstBoxContacts.Items.Add(s);
+                LstBoxContacts.Items.Add(c);
             }
         }
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Contacts selectedContact = (Contacts)LstBoxContacts.SelectedItem;
@@ -63,9 +57,11 @@ namespace _P__WPF___Contact_List
             txtLastName.Text = selectedContact.LastName;
             txtEmail.Text = selectedContact.Email;
 
-            var uri = new Uri(selectedContact.URL);
+            var uri = new Uri(selectedContact.Photo);
             var img = new BitmapImage(uri);
             imgProfile.Source = img;
+
+
         }
     }
 }
