@@ -63,6 +63,6 @@ namespace _P__Chuck_Norris
                 txtFunnyJoke.Text = joke.value;             
             }
         }
-    }           //  http:// ---------------- /pokemon?offset=0&limit=1200
-}               //  http:// ---------------- /pokemon/1
+    }       //  http:// ---------------- /pokemon?offset=0&limit=1200
+}           //  http:// ---------------- /pokemon/1
 
