@@ -1,0 +1,9 @@
+﻿<Application x:Class="_P__Rick_And_Morty__AddCharToCboBox.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:_P__Rick_And_Morty__AddCharToCboBox"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>
