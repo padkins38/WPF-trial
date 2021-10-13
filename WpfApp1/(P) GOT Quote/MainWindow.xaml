@@ -10,10 +10,10 @@
         <Grid.Background>
             <ImageBrush ImageSource="https://wallpaperset.com/w/full/7/9/b/18243.jpg"/>
         </Grid.Background>
-        <Button x:Name="btnGetQuote" Content="Get Quote" HorizontalAlignment="Left" Margin="72,69,0,0" VerticalAlignment="Top" Height="55" Width="105" Background="#FFE9EEFF" Click="btnGetQuote_Click"/>
-        <Label x:Name="lblQuote" Content="" HorizontalAlignment="Right" Margin="0,217,72,0" Width="656" FontSize="22" Height="122" VerticalAlignment="Top"/>
-        <Label x:Name="lblCharacter" Content="" HorizontalAlignment="Left" Margin="72,169,0,0" VerticalAlignment="Top" Height="43" Width="253" FontSize="22" FontWeight="Bold"/>
-        <Button x:Name="btnExport" Content="Export" HorizontalAlignment="Left" Margin="623,69,0,0" VerticalAlignment="Top" Height="55" Width="105" Background="#FFE9EEFF" Click="btnExport_Click"/>
+        <Button x:Name="btnGetQuote" Content="Get Quote" Margin="72,69,623,310" Background="#FFE9EEFF" Click="btnGetQuote_Click"/>
+        <Label x:Name="lblQuote" Content="" Margin="72,217,72,95"/>
+        <Label x:Name="lblCharacter" Content="" Margin="72,169,0,0" FontSize="14" FontWeight="Bold" Height="43" VerticalAlignment="Top" HorizontalAlignment="Left" Width="253"/>
+        <Button x:Name="btnExport" Content="Export" Margin="623,69,72,310" Background="#FFE9EEFF" Click="btnExport_Click"/>
 
     </Grid>
 </Window>
