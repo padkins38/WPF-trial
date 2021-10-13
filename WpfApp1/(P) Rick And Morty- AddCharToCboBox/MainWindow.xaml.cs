@@ -42,7 +42,6 @@ namespace _P__Rick_And_Morty__AddCharToCboBox
                     {
                         cboCharacters.Items.Add(item);
                     }
-
                     page++;
                 }
             }

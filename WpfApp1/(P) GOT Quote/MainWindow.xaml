@@ -1,0 +1,19 @@
+﻿<Window x:Class="_P__GOT_Quote.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_P__GOT_Quote"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="https://wallpaperset.com/w/full/7/9/b/18243.jpg"/>
+        </Grid.Background>
+        <Button x:Name="btnGetQuote" Content="Get Quote" HorizontalAlignment="Left" Margin="72,69,0,0" VerticalAlignment="Top" Height="55" Width="105" Background="#FFE9EEFF" Click="btnGetQuote_Click"/>
+        <Label x:Name="lblQuote" Content="" HorizontalAlignment="Right" Margin="0,217,72,0" Width="656" FontSize="22" Height="122" VerticalAlignment="Top"/>
+        <Label x:Name="lblCharacter" Content="" HorizontalAlignment="Left" Margin="72,169,0,0" VerticalAlignment="Top" Height="43" Width="253" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="btnExport" Content="Export" HorizontalAlignment="Left" Margin="623,69,0,0" VerticalAlignment="Top" Height="55" Width="105" Background="#FFE9EEFF" Click="btnExport_Click"/>
+
+    </Grid>
+</Window>

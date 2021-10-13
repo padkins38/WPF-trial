@@ -28,9 +28,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contacts attempt 2", "Conta
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "(P) Chuck Norris", "(P) Chuck Norris\(P) Chuck Norris.csproj", "{74DCDB9D-9D9B-401F-83AA-7E2EB40B65E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pokemon", "Pokemon\Pokemon.csproj", "{7F8E04BB-37A7-4E38-8828-6BAF27D1687F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pokemon", "Pokemon\Pokemon.csproj", "{7F8E04BB-37A7-4E38-8828-6BAF27D1687F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "(P) Rick And Morty- AddCharToCboBox", "(P) Rick And Morty- AddCharToCboBox\(P) Rick And Morty- AddCharToCboBox.csproj", "{30EF737F-D972-48D2-971B-077B8E39B446}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "(P) Rick And Morty- AddCharToCboBox", "(P) Rick And Morty- AddCharToCboBox\(P) Rick And Morty- AddCharToCboBox.csproj", "{30EF737F-D972-48D2-971B-077B8E39B446}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "(P) GOT Quote", "(P) GOT Quote\(P) GOT Quote.csproj", "{42F6D639-15EA-4B1F-A323-62713109C628}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -86,6 +88,10 @@ Global
 		{30EF737F-D972-48D2-971B-077B8E39B446}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30EF737F-D972-48D2-971B-077B8E39B446}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30EF737F-D972-48D2-971B-077B8E39B446}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42F6D639-15EA-4B1F-A323-62713109C628}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42F6D639-15EA-4B1F-A323-62713109C628}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42F6D639-15EA-4B1F-A323-62713109C628}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42F6D639-15EA-4B1F-A323-62713109C628}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
