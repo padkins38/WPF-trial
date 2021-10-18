@@ -50,14 +50,18 @@ namespace _P__JSON___Serialization
                     return;
                 }
                 system.user_review = userReview;
+                //Create List for Later Use
+                GList.Add(system);
 
                 //Reduce Redundancy in the ComboBox
-                if (cboPlatform.Items.Contains(system.platform) == true)
+                if (cboPlatform.Items.Contains("All") == false)
                 {
-                    return;
+                    cboPlatform.Items.Add("All");
                 }
-                cboPlatform.Items.Add(system.platform);
-                GList.Add(system);
+                else if (cboPlatform.Items.Contains(system.platform) == false)
+                {
+                    cboPlatform.Items.Add(system.platform);
+                }
             }
         }
     }

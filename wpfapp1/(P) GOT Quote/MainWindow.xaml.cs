@@ -50,6 +50,14 @@ namespace _P__GOT_Quote
         {
             string json = JsonConvert.SerializeObject(apiQuoteList);
             File.WriteAllText("GOT_Quotes.json", json);
+
+            //ex new window
+            wndExample ex = new wndExample();
+
+            ex.DoSomething();
+
+            ex.Show();
+
         }
     }
 }
