@@ -18,5 +18,9 @@ namespace _P__JSON___Serialization
 
         public double user_review  {get;set;}
 
+        public override string ToString()
+        {
+            return name;
+        }
     }
 }
