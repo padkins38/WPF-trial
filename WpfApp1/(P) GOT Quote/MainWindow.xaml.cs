@@ -23,7 +23,7 @@ namespace _P__GOT_Quote
     /// </summary>
     public partial class MainWindow : Window
     {
-        List<GameOfThronesAPI> apiList = new List<GameOfThronesAPI>();
+        List<GameOfThronesAPI> apiQuoteList = new List<GameOfThronesAPI>();
         public MainWindow()
         {
             InitializeComponent();
@@ -42,14 +42,22 @@ namespace _P__GOT_Quote
                 lblCharacter.Content = api.character;
                 lblQuote.Content = api.quote;
 
-                apiList.Add(api);
+                apiQuoteList.Add(api);
             }
         }
 
         private void btnExport_Click(object sender, RoutedEventArgs e)
         {
-            string json = JsonConvert.SerializeObject(apiList);
+            string json = JsonConvert.SerializeObject(apiQuoteList);
             File.WriteAllText("GOT_Quotes.json", json);
+
+            //ex new window
+            wndExample ex = new wndExample();
+
+            ex.DoSomething();
+
+            ex.Show();
+
         }
     }
 }
