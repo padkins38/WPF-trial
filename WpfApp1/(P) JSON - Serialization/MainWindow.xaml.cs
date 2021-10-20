@@ -23,10 +23,10 @@ namespace _P__JSON___Serialization
     {
         public MainWindow()
         {
+            List<Game> GList = new List<Game>();
             InitializeComponent();
 
             string[] file = File.ReadAllLines("all_games.csv");
-            List<Game> GList = new List<Game>();
 
             for (int i = 1; i < file.Length; i++)
             {
@@ -63,6 +63,11 @@ namespace _P__JSON___Serialization
                     cboPlatform.Items.Add(system.platform);
                 }
             }
+        }
+
+        private void cboPlatform_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            string selectedItem = new Uri(GL)
         }
     }
 }
